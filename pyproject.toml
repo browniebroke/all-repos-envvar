@@ -1,0 +1,81 @@
+[tool.poetry]
+name = "all-repos-envvar"
+version = "0.0.1"
+description = "An all-repos extension to read values from environment variables."
+authors = ["Bruno Alla <alla.brunoo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/browniebroke/all-repos-envvar"
+documentation = "https://all-repos-envvar.readthedocs.io"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+packages = [
+    { include = "all_repos_envvar", from = "src" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/browniebroke/all-repos-envvar/issues"
+"Changelog" = "https://all-repos-envvar.readthedocs.io/changelog.html"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+flake8 = "^4.0"
+isort = "^5.10"
+mypy = "^0.931"
+pytest = "^6.1"
+pytest-cov = "^3.0"
+pytest-srcpaths = "^1.2"  # No longer needed with pytest 7
+pyupgrade = "^2.29"
+tox = "^3.20"
+
+[tool.semantic_release]
+branch = "main"
+version_toml = "pyproject.toml:tool.poetry.version"
+version_variable = "src/all_repos_envvar/__init__.py:__version__"
+build_command = "pip install poetry && poetry build"
+
+[tool.pytest.ini_options]
+addopts = "-v -Wdefault --cov=all_repos_envvar --cov-report=term-missing:skip-covered"
+pythonpath = ["src"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "@overload",
+    "if TYPE_CHECKING",
+]
+
+[tool.isort]
+profile = "black"
+known_first_party = ["all_repos_envvar", "tests"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+mypy_path = "src/"
+no_implicit_optional = true
+show_error_codes = true
+warn_unreachable = true
+warn_unused_ignores = true
+exclude = [
+    'setup.py',
+]
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+allow_untyped_defs = true
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
