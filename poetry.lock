@@ -1,4 +1,15 @@
 [[package]]
+name = "all-repos"
+version = "1.21.3"
+description = "Clone all your repositories and apply sweeping changes."
+category = "main"
+optional = false
+python-versions = ">=3.6.1"
+
+[package.dependencies]
+identify = "*"
+
+[[package]]
 name = "atomicwrites"
 version = "1.4.0"
 description = "Atomic file writes."
@@ -114,6 +125,17 @@ importlib-metadata = {version = "<4.3", markers = "python_version < \"3.8\""}
 mccabe = ">=0.6.0,<0.7.0"
 pycodestyle = ">=2.8.0,<2.9.0"
 pyflakes = ">=2.4.0,<2.5.0"
+
+[[package]]
+name = "identify"
+version = "2.4.5"
+description = "File identification library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+license = ["ukkonen"]
 
 [[package]]
 name = "importlib-metadata"
@@ -435,9 +457,13 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "ddd87397c2e4c10bf317b8f95057b23aa2f2a6a097a11c1695954f0fad870cef"
+content-hash = "b4dba4a3ac5d865981c858fc5292fddb0f20b2de44b9bfffe4bd2ee164b87966"
 
 [metadata.files]
+all-repos = [
+    {file = "all_repos-1.21.3-py2.py3-none-any.whl", hash = "sha256:45ee2783d1b7a8fe1dff616f160786ed819a4d3b0f3486ad6dd43b1cd6b39344"},
+    {file = "all_repos-1.21.3.tar.gz", hash = "sha256:65e914237cc779cc2a5179204ebec943dfccae480b30fb5db6f4e22d87548861"},
+]
 atomicwrites = [
     {file = "atomicwrites-1.4.0-py2.py3-none-any.whl", hash = "sha256:6d1784dea7c0c8d4a5172b6c620f40b6e4cbfdf96d783691f2e1302a7b88e197"},
     {file = "atomicwrites-1.4.0.tar.gz", hash = "sha256:ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a"},
@@ -514,6 +540,10 @@ filelock = [
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
     {file = "flake8-4.0.1.tar.gz", hash = "sha256:806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d"},
+]
+identify = [
+    {file = "identify-2.4.5-py2.py3-none-any.whl", hash = "sha256:d27d10099844741c277b45d809bd452db0d70a9b41ea3cd93799ebbbcc6dcb29"},
+    {file = "identify-2.4.5.tar.gz", hash = "sha256:d11469ff952a4d7fd7f9be520d335dc450f585d474b39b5dfb86a500831ab6c7"},
 ]
 importlib-metadata = [
     {file = "importlib_metadata-4.2.0-py3-none-any.whl", hash = "sha256:057e92c15bc8d9e8109738a48db0ccb31b4d9d5cfbee5a8670879a30be66304b"},

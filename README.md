@@ -35,6 +35,26 @@ Install this via pip (or your favourite package manager):
 
 `pip install all-repos-envvar`
 
+## Usage
+
+This library should be installed alongside `all-repos` so that it's findable at import time. It provides a custom `source` and `push` to get the GitHub API key from an environment variable `GITHUB_API_KEY`, allowing you to omit it from the config:
+
+```json
+{
+  "output_dir": "output",
+  "source": "all_repos_envvar.source",
+  "source_settings": {
+    "username": "browniebroke"
+  },
+  "push": "all_repos_envvar.push",
+  "push_settings": {
+    "username": "browniebroke"
+  }
+}
+```
+
+I wanted this feature, but it looks like it won't be implemented in the main repo, hence this little extension. The source module extends `all_repos.source.github` and the push module extends `all_repos.push.github_pull_request`
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
