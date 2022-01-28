@@ -24,10 +24,18 @@ class TestSettings:
     @mock.patch.dict(os.environ, {"GITHUB_API_KEY": "ignored"})
     def test_key_from_both(self):
         settings = source.Settings(
-            api_key="realone",
+            api_key="actual",
             username="browniebroke",
         )
-        assert settings.api_key == "realone"
+        assert settings.api_key == "actual"
+
+    def test_env_file(self, workspace):
+        env_file = workspace / ".env"
+        env_file.write_text("GITHUB_API_KEY=notsecret\n")
+        settings = source.Settings(
+            username="browniebroke",
+        )
+        assert settings.api_key == "notsecret"
 
 
 def test_list_repos_same_as_base():
