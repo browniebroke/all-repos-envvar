@@ -37,7 +37,7 @@ Install this via pip (or your favourite package manager):
 
 ## Usage
 
-This library should be installed alongside `all-repos` so that it's findable at import time. It provides a custom `source` and `push` to get the GitHub API key from an environment variable `GITHUB_API_KEY`, allowing you to omit it from the config:
+This library should be installed alongside `all-repos` so that it's findable at import time. It provides a custom `source` and `push` to get the GitHub API key from an environment variable `GITHUB_API_KEY` (reading from and `.env` file is also supported), allowing you to omit it from the config:
 
 ```json
 {
