@@ -29,6 +29,14 @@ class TestSettings:
         )
         assert settings.api_key == "realone"
 
+    def test_env_file(self, workspace):
+        env_file = workspace / ".env"
+        env_file.write_text("GITHUB_API_KEY=notsecret\n")
+        settings = push.Settings(
+            username="browniebroke",
+        )
+        assert settings.api_key == "notsecret"
+
 
 def test_push_same_as_base():
     assert hasattr(push, "push")
