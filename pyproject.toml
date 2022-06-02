@@ -28,13 +28,9 @@ all-repos = ">=1"
 environs = "^9.4"
 
 [tool.poetry.dev-dependencies]
-black = "^22.1"
-flake8 = "^4.0"
-isort = "^5.10"
 mypy = "^0.960"
 pytest = "^7.0"
 pytest-cov = "^3.0"
-pyupgrade = "^2.31"
 tox = "^3.20"
 
 [tool.semantic_release]
