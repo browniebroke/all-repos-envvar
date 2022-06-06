@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2022-06-06)
+### Fix
+* **deps:** Revert PSR upgrade ([`9ce61f6`](https://github.com/browniebroke/all-repos-envvar/commit/9ce61f67cc24dd3621be53304eeb36889177cf87))
+
+### Documentation
+* Mention `.env` file support in the README.md ([`b3e540a`](https://github.com/browniebroke/all-repos-envvar/commit/b3e540a6eea52752325d8b8df38841c599d46edd))
+
 ## v0.2.0 (2022-01-28)
 ### Feature
 * Add ability to read variables from an `.env` file ([`d4e4af8`](https://github.com/browniebroke/all-repos-envvar/commit/d4e4af878ff782b7d09a008162cb75a8f97b117f))
