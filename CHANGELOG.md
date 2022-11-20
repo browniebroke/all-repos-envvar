@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-11-20)
+### Feature
+* Officially support Python 3.11 ([#164](https://github.com/browniebroke/all-repos-envvar/issues/164)) ([`c48fb33`](https://github.com/browniebroke/all-repos-envvar/commit/c48fb338f9f23b3a2b13125ec76a980a3200ff73))
+
 ## v0.2.1 (2022-06-06)
 ### Fix
 * **deps:** Revert PSR upgrade ([`9ce61f6`](https://github.com/browniebroke/all-repos-envvar/commit/9ce61f67cc24dd3621be53304eeb36889177cf87))
