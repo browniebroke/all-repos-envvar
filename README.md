@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/browniebroke/all-repos-envvar/actions?query=workflow%3ACI">
-    <img src="https://img.shields.io/github/workflow/status/browniebroke/all-repos-envvar/CI/main?label=CI&logo=github&style=flat-square" alt="CI Status" >
+    <img src="https://img.shields.io/github/actions/workflow/status/browniebroke/all-repos-envvar/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://codecov.io/gh/browniebroke/all-repos-envvar">
     <img src="https://img.shields.io/codecov/c/github/browniebroke/all-repos-envvar.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
