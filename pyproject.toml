@@ -25,7 +25,7 @@ packages = [
 "Mastodon" = "https://fosstodon.org/@browniebroke"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 all-repos = ">=1"
 environs = "^9.4"
 
