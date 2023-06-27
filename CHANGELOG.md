@@ -2,6 +2,21 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-06-27)
+
+### Feature
+
+* Drop support for Python 3.7 ([`595d5b8`](https://github.com/browniebroke/all-repos-envvar/commit/595d5b8841581e8c37278d722e9e20011f09b336))
+
+### Breaking
+
+* Drop support for Python 3.7 as it reached EOL on June 27, 2023. More infos: https://devguide.python.org/versions/ ([`595d5b8`](https://github.com/browniebroke/all-repos-envvar/commit/595d5b8841581e8c37278d722e9e20011f09b336))
+
+### Documentation
+
+* Update link for CI badge ([#200](https://github.com/browniebroke/all-repos-envvar/issues/200)) ([`7d7c7f9`](https://github.com/browniebroke/all-repos-envvar/commit/7d7c7f986a1c1fba00c11768c3eb5e231306b45f))
+* Update badge for CI workflow ([#199](https://github.com/browniebroke/all-repos-envvar/issues/199)) ([`e52a0be`](https://github.com/browniebroke/all-repos-envvar/commit/e52a0be134dc9602a6b6b2bb3e66861f3779c679))
+
 ## v0.3.0 (2022-11-20)
 ### Feature
 * Officially support Python 3.11 ([#164](https://github.com/browniebroke/all-repos-envvar/issues/164)) ([`c48fb33`](https://github.com/browniebroke/all-repos-envvar/commit/c48fb338f9f23b3a2b13125ec76a980a3200ff73))
