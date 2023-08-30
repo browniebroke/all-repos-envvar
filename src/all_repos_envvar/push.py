@@ -4,7 +4,7 @@ from .mixin import GitHubEnvMixin
 
 
 class Settings(GitHubEnvMixin, base.Settings):
-    pass
+    """Extend all_repos' Settings with our mixin."""
 
 
 push = base.push
