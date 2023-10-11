@@ -37,7 +37,9 @@ pytest-cov = "^4.0"
 [tool.semantic_release]
 branch = "main"
 version_toml = ["pyproject.toml:tool.poetry.version"]
-version_variable = "src/all_repos_envvar/__init__.py:__version__"
+version_variables = [
+    "src/all_repos_envvar/__init__.py:__version__",
+]
 build_command = "pip install poetry && poetry build"
 
 [tool.semantic_release.changelog]
