@@ -27,6 +27,12 @@
   <img src="https://img.shields.io/pypi/l/all-repos-envvar.svg?style=flat-square" alt="License">
 </p>
 
+---
+
+**Source Code**: <a href="https://github.com/browniebroke/all-repos-envvar" target="_blank">https://github.com/browniebroke/all-repos-envvar</a>
+
+---
+
 An all-repos extension to read values from environment variables.
 
 ## Installation
