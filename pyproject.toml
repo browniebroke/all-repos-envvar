@@ -35,7 +35,6 @@ pytest = "^7.0"
 pytest-cov = "^4.0"
 
 [tool.semantic_release]
-branch = "main"
 version_toml = ["pyproject.toml:tool.poetry.version"]
 version_variables = [
     "src/all_repos_envvar/__init__.py:__version__",
@@ -50,6 +49,13 @@ exclude_commit_patterns = [
 
 [tool.semantic_release.changelog.environment]
 keep_trailing_newline = true
+
+[tool.semantic_release.branches.main]
+match = "main"
+
+[tool.semantic_release.branches.noop]
+match = "(?!main$)"
+prerelease = true
 
 [tool.pytest.ini_options]
 addopts = "-v -Wdefault --cov=all_repos_envvar --cov-report=term-missing:skip-covered"
