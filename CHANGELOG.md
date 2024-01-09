@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.1 (2024-01-09)
+
+### Fix
+
+- Update dependency environs to v10 (#367) ([`543025b`](https://github.com/browniebroke/all-repos-envvar/commit/543025b5ca97832bb45599c94b1db3fa749c930b))
+
 ## v1.1.0 (2023-08-07)
 
 ### Feature
