@@ -31,7 +31,7 @@ all-repos = ">=1"
 environs = "^10.0.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.0"
+pytest = "^8.0.0"
 pytest-cov = "^4.0"
 
 [tool.semantic_release]
