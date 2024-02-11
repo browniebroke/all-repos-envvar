@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.4 (2024-02-11)
+
+### Fix
+
+- Update dependency all-repos to v1.27.0 ([`98920a6`](https://github.com/browniebroke/all-repos-envvar/commit/98920a6ae23e09afaee2ed1d7fc28f7468df07d4))
+
 ## v1.1.3 (2024-01-11)
 
 ### Fix
