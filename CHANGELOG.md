@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.5 (2024-03-05)
+
+### Fix
+
+- Add support for environs v11 (#412) ([`59a559b`](https://github.com/browniebroke/all-repos-envvar/commit/59a559b22fd548d67bc823e391710976d1a29357))
+
 ## v1.1.4 (2024-02-11)
 
 ### Fix
