@@ -28,10 +28,10 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.8"
 all-repos = ">=1"
-environs = "^10.0.0"
+environs = ">=10.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.0.0"
+pytest = "^8.0"
 pytest-cov = "^4.0"
 
 [tool.semantic_release]
