@@ -36,7 +36,7 @@
 An all-repos extension to read values from environment variables.
 
 > [!IMPORTANT]
-> As of [all-repos v1.25](https://github.com/asottile/all-repos/releases/tag/v1.25.0), you may not need this package, see [section below](/#why)
+> As of [all-repos v1.25](https://github.com/asottile/all-repos/releases/tag/v1.25.0), you may not need this package, see [section below](#why)
 
 ## Installation
 
