@@ -35,6 +35,9 @@
 
 An all-repos extension to read values from environment variables.
 
+> [!IMPORTANT]
+> As of [all-repos v1.25](https://github.com/asottile/all-repos/releases/tag/v1.25.0), you may not need this package, see [section below](/#why)
+
 ## Installation
 
 Install this via pip (or your favourite package manager):
@@ -59,7 +62,13 @@ This library should be installed alongside `all-repos` so that it's findable at 
 }
 ```
 
-I wanted this feature, but it looks like it won't be implemented in the main repo, hence this little extension. The source module extends `all_repos.source.github` and the push module extends `all_repos.push.github_pull_request`
+The source module extends `all_repos.source.github` and the push module extends `all_repos.push.github_pull_request`.
+
+## Why
+
+I wanted this feature, but at the time, it looked like [it would never be implemented in the main repo](https://github.com/asottile/all-repos/issues/79), hence this little extension. Since then, the author of all-repos apparently changed their mind and support for reading from environment variable [was added in early 2023](https://github.com/asottile/all-repos/pull/275), and it's now included since release v1.25.0.
+
+The only extra feature that this package provides is to read from `.env` file, but this can be achieved by more general solutions like [`direnv`](https://direnv.net).
 
 ## Contributors ✨
 
