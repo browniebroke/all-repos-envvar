@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.1.6 (2024-05-19)
+
+### Fix
+
+- Update classifiers to update pypi readme ([`8db482a`](https://github.com/browniebroke/all-repos-envvar/commit/8db482a3c83f3bc978e97ffc284946e58381309c))
+
+### Documentation
+
+- Add note regarding upstream support ([`659048c`](https://github.com/browniebroke/all-repos-envvar/commit/659048c815c043b73b9e70fcdee3131b13235b1d))
+
 ## v1.1.5 (2024-03-05)
 
 ### Fix
