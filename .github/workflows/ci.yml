@@ -91,7 +91,7 @@ jobs:
         uses: actions/attest-build-provenance@v1
         if: steps.release.outputs.released == 'true'
         with:
-          subject-path: "dist/*
+          subject-path: "dist/*"
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
