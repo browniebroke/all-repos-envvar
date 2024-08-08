@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.7 (2024-08-08)
+
+### Fix
+
+- Attest build provenance (#512) ([`2179c72`](https://github.com/browniebroke/all-repos-envvar/commit/2179c72ca4a0363cf376e8951a08d58eee6a0b83))
+
 ## v1.1.6 (2024-05-19)
 
 ### Fix
