@@ -1,14 +1,20 @@
 # CHANGELOG
 
+## v1.2.0 (2024-10-31)
+
+### Features
+
+- Drop support for python 3.8 (#558) ([`8ec7052`](https://github.com/browniebroke/all-repos-envvar/commit/8ec7052c7e5ae5dfd168a20c3fe197f3f479782e))
+
 ## v1.1.7 (2024-08-08)
 
-### Fix
+### Bug fixes
 
 - Attest build provenance (#512) ([`2179c72`](https://github.com/browniebroke/all-repos-envvar/commit/2179c72ca4a0363cf376e8951a08d58eee6a0b83))
 
 ## v1.1.6 (2024-05-19)
 
-### Fix
+### Bug fixes
 
 - Update classifiers to update pypi readme ([`8db482a`](https://github.com/browniebroke/all-repos-envvar/commit/8db482a3c83f3bc978e97ffc284946e58381309c))
 
@@ -18,37 +24,37 @@
 
 ## v1.1.5 (2024-03-05)
 
-### Fix
+### Bug fixes
 
 - Add support for environs v11 (#412) ([`59a559b`](https://github.com/browniebroke/all-repos-envvar/commit/59a559b22fd548d67bc823e391710976d1a29357))
 
 ## v1.1.4 (2024-02-11)
 
-### Fix
+### Bug fixes
 
 - Update dependency all-repos to v1.27.0 ([`98920a6`](https://github.com/browniebroke/all-repos-envvar/commit/98920a6ae23e09afaee2ed1d7fc28f7468df07d4))
 
 ## v1.1.3 (2024-01-11)
 
-### Fix
+### Bug fixes
 
 - Update dependency environs to v10.3.0 ([`8cac1ea`](https://github.com/browniebroke/all-repos-envvar/commit/8cac1eaa097db3bd06c48f15bde6957f79dfccc0))
 
 ## v1.1.2 (2024-01-10)
 
-### Fix
+### Bug fixes
 
 - Update dependency environs to v10.2.0 ([`9b52024`](https://github.com/browniebroke/all-repos-envvar/commit/9b520247fea82f42d42fdb345e4d4c3d00587a27))
 
 ## v1.1.1 (2024-01-09)
 
-### Fix
+### Bug fixes
 
 - Update dependency environs to v10 (#367) ([`543025b`](https://github.com/browniebroke/all-repos-envvar/commit/543025b5ca97832bb45599c94b1db3fa749c930b))
 
 ## v1.1.0 (2023-08-07)
 
-### Feature
+### Features
 
 - Add official support for python 3.12 (#289) ([`2766f88`](https://github.com/browniebroke/all-repos-envvar/commit/2766f880941fb4e007a0ee2474e3bc7372e5a5b1))
 
