@@ -29,7 +29,7 @@ packages = [
 "Mastodon" = "https://fosstodon.org/@browniebroke"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 all-repos = ">=1"
 environs = ">=10.0"
 
@@ -38,7 +38,7 @@ pytest = "^8.0"
 pytest-cov = "^5.0.0"
 
 [tool.ruff]
-target-version = "py38"
+target-version = "py39"
 line-length = 88
 
 lint.select = [
