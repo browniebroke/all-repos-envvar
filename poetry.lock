@@ -2,13 +2,13 @@
 
 [[package]]
 name = "all-repos"
-version = "1.27.0"
+version = "1.28.0"
 description = "Clone all your repositories and apply sweeping changes."
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 files = [
-    {file = "all_repos-1.27.0-py2.py3-none-any.whl", hash = "sha256:2632e2a02615f7d3899aa199081b6f6c7ab38395427919886056a947ffa6e2c8"},
-    {file = "all_repos-1.27.0.tar.gz", hash = "sha256:96fea3e34caa004b0770501e6efb93dc49cbca05fb56c2b8b2a85d06fb3a4573"},
+    {file = "all_repos-1.28.0-py2.py3-none-any.whl", hash = "sha256:a5d3f2155d02d4e94770f2fc1a85a667f40286d2572c5ddcabf1f56ee1564288"},
+    {file = "all_repos-1.28.0.tar.gz", hash = "sha256:c459fd941439a77e6dad4ad39f8b29fd02ef3bb176b4b56cf211412e4e9e79bc"},
 ]
 
 [package.dependencies]
