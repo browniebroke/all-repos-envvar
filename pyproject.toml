@@ -1,41 +1,47 @@
 [build-system]
-build-backend = "poetry.core.masonry.api"
-requires = [ "poetry-core>=1" ]
+build-backend = "setuptools.build_meta"
+requires = [ "setuptools" ]
 
-[tool.poetry]
+[project]
 name = "all-repos-envvar"
 version = "1.2.0"
 description = "An all-repos extension to read values from environment variables."
-authors = [ "Bruno Alla <alla.brunoo@gmail.com>" ]
-license = "MIT"
 readme = "README.md"
-repository = "https://github.com/browniebroke/all-repos-envvar"
-documentation = "https://all-repos-envvar.readthedocs.io"
+license = { text = "MIT" }
+authors = [
+  { name = "Bruno Alla", email = "alla.brunoo@gmail.com" },
+]
+requires-python = ">=3.9"
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
   "Intended Audience :: Developers",
   "Natural Language :: English",
   "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Software Development :: Libraries",
 ]
-packages = [
-  { include = "all_repos_envvar", from = "src" },
+
+dependencies = [
+  "all-repos>=1",
+  "environs>=10",
 ]
+urls."Bug Tracker" = "https://github.com/browniebroke/all-repos-envvar/issues"
+urls.Changelog = "https://all-repos-envvar.readthedocs.io/changelog.html"
+urls.documentation = "https://all-repos-envvar.readthedocs.io"
+urls.Mastodon = "https://fosstodon.org/@browniebroke"
+urls.repository = "https://github.com/browniebroke/all-repos-envvar"
+urls.Twitter = "https://twitter.com/_BrunoAlla"
 
-[tool.poetry.urls]
-"Bug Tracker" = "https://github.com/browniebroke/all-repos-envvar/issues"
-"Changelog" = "https://all-repos-envvar.readthedocs.io/changelog.html"
-"Twitter" = "https://twitter.com/_BrunoAlla"
-"Mastodon" = "https://fosstodon.org/@browniebroke"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-all-repos = ">=1"
-environs = ">=10.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.0"
-pytest-cov = "^6.0.0"
+[dependency-groups]
+dev = [
+  "pytest>=8,<9",
+  "pytest-cov>=6,<7",
+]
 
 [tool.ruff]
 target-version = "py39"
@@ -106,11 +112,16 @@ module = "tests.*"
 allow_untyped_defs = true
 
 [tool.semantic_release]
-version_toml = [ "pyproject.toml:tool.poetry.version" ]
+version_toml = [ "pyproject.toml:project.version" ]
 version_variables = [
   "src/all_repos_envvar/__init__.py:__version__",
 ]
-build_command = "pip install poetry && poetry build"
+build_command = """
+pip install uv
+uv lock
+git add uv.lock
+uv build
+"""
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
