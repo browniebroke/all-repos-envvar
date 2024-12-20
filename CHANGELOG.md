@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.3.0 (2024-12-20)
+
+### Features
+
+- Migrate migrate packaging to uv (#597) ([`c90b605`](https://github.com/browniebroke/all-repos-envvar/commit/c90b60528c9eb03a50ad141b7557439a2b0d171b))
+
 ## v1.2.0 (2024-10-31)
 
 ### Features
