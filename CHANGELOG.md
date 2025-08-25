@@ -1,22 +1,28 @@
 # CHANGELOG
 
+## v1.3.1 (2025-08-25)
+
+### Bug fixes
+
+- Use spdx expression for license ([`2edfe0a`](https://github.com/browniebroke/all-repos-envvar/commit/2edfe0af6493491321597874436fd16efc31cbfc))
+
 ## v1.3.0 (2024-12-20)
 
 ### Features
 
-- Migrate migrate packaging to uv (#597) ([`c90b605`](https://github.com/browniebroke/all-repos-envvar/commit/c90b60528c9eb03a50ad141b7557439a2b0d171b))
+- Migrate migrate packaging to uv ([`c90b605`](https://github.com/browniebroke/all-repos-envvar/commit/c90b60528c9eb03a50ad141b7557439a2b0d171b))
 
 ## v1.2.0 (2024-10-31)
 
 ### Features
 
-- Drop support for python 3.8 (#558) ([`8ec7052`](https://github.com/browniebroke/all-repos-envvar/commit/8ec7052c7e5ae5dfd168a20c3fe197f3f479782e))
+- Drop support for python 3.8 ([`8ec7052`](https://github.com/browniebroke/all-repos-envvar/commit/8ec7052c7e5ae5dfd168a20c3fe197f3f479782e))
 
 ## v1.1.7 (2024-08-08)
 
 ### Bug fixes
 
-- Attest build provenance (#512) ([`2179c72`](https://github.com/browniebroke/all-repos-envvar/commit/2179c72ca4a0363cf376e8951a08d58eee6a0b83))
+- Attest build provenance ([`2179c72`](https://github.com/browniebroke/all-repos-envvar/commit/2179c72ca4a0363cf376e8951a08d58eee6a0b83))
 
 ## v1.1.6 (2024-05-19)
 
@@ -32,7 +38,8 @@
 
 ### Bug fixes
 
-- Add support for environs v11 (#412) ([`59a559b`](https://github.com/browniebroke/all-repos-envvar/commit/59a559b22fd548d67bc823e391710976d1a29357))
+- Add support for environs v11 ([`59a559b`](https://github.com/browniebroke/all-repos-envvar/commit/59a559b22fd548d67bc823e391710976d1a29357))
+- Update dependency environs to v11 ([`59a559b`](https://github.com/browniebroke/all-repos-envvar/commit/59a559b22fd548d67bc823e391710976d1a29357))
 
 ## v1.1.4 (2024-02-11)
 
@@ -56,13 +63,13 @@
 
 ### Bug fixes
 
-- Update dependency environs to v10 (#367) ([`543025b`](https://github.com/browniebroke/all-repos-envvar/commit/543025b5ca97832bb45599c94b1db3fa749c930b))
+- Update dependency environs to v10 ([`543025b`](https://github.com/browniebroke/all-repos-envvar/commit/543025b5ca97832bb45599c94b1db3fa749c930b))
 
 ## v1.1.0 (2023-08-07)
 
 ### Features
 
-- Add official support for python 3.12 (#289) ([`2766f88`](https://github.com/browniebroke/all-repos-envvar/commit/2766f880941fb4e007a0ee2474e3bc7372e5a5b1))
+- Add official support for python 3.12 ([`2766f88`](https://github.com/browniebroke/all-repos-envvar/commit/2766f880941fb4e007a0ee2474e3bc7372e5a5b1))
 
 ## v1.0.0 (2023-06-27)
 
