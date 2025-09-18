@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.4.0 (2025-09-18)
+
+### Features
+
+- Add support for python 3.14 ([`d7f4066`](https://github.com/browniebroke/all-repos-envvar/commit/d7f40666e52192cd26671b10b92a8b51f80829a2))
+- Drop support for python 3.9 ([`b315756`](https://github.com/browniebroke/all-repos-envvar/commit/b3157568788430a9e9b6779962e99abbc1691a39))
+
 ## v1.3.1 (2025-08-25)
 
 ### Bug fixes
