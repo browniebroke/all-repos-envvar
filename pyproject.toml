@@ -39,7 +39,7 @@ urls.Twitter = "https://twitter.com/_BrunoAlla"
 
 [dependency-groups]
 dev = [
-  "pytest>=8,<9",
+  "pytest>=9,<10",
   "pytest-cov>=7,<8",
 ]
 
