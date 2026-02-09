@@ -85,12 +85,12 @@ ini_options.addopts = "-v -Wdefault --cov=all_repos_envvar --cov-report=term-mis
 ini_options.pythonpath = [ "src" ]
 
 [tool.coverage]
+run.branch = true
 report.exclude_lines = [
-  "pragma: no cover",
   "@overload",
   "if TYPE_CHECKING",
+  "pragma: no cover",
 ]
-run.branch = true
 
 [tool.mypy]
 check_untyped_defs = true
