@@ -82,7 +82,7 @@ max_supported_python = "3.14"
 
 [tool.pytest]
 minversion = "9.0"
-addopts = ["-v", "-Wonce", "--cov=all_repos_envvar"]
+addopts = [ "-v", "-Wonce", "--cov=all_repos_envvar" ]
 pythonpath = [ "src" ]
 
 [tool.coverage]
