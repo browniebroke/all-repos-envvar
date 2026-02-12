@@ -81,7 +81,8 @@ lint.isort.known-first-party = [ "all_repos_envvar", "tests" ]
 max_supported_python = "3.14"
 
 [tool.pytest]
-addopts = "-v -Wdefault --cov=all_repos_envvar --cov-report=term-missing:skip-covered"
+minversion = "9.0"
+addopts = ["-v", "-Wonce", "--cov=all_repos_envvar"]
 pythonpath = [ "src" ]
 
 [tool.coverage]
