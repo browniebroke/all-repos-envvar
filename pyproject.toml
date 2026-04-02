@@ -80,19 +80,6 @@ lint.isort.known-first-party = [ "all_repos_envvar", "tests" ]
 [tool.pyproject-fmt]
 max_supported_python = "3.14"
 
-[tool.pytest]
-minversion = "9.0"
-addopts = [ "-v", "-Wonce", "--cov=all_repos_envvar" ]
-pythonpath = [ "src" ]
-
-[tool.coverage]
-run.branch = true
-report.exclude_lines = [
-  "@overload",
-  "if TYPE_CHECKING",
-  "pragma: no cover",
-]
-
 [tool.mypy]
 check_untyped_defs = true
 disallow_any_generics = true
@@ -107,6 +94,19 @@ exclude = [
   "setup.py",
 ]
 overrides = [ { module = "tests.*", allow_untyped_defs = true } ]
+
+[tool.pytest]
+minversion = "9.0"
+addopts = [ "-v", "-Wonce", "--cov=all_repos_envvar" ]
+pythonpath = [ "src" ]
+
+[tool.coverage]
+run.branch = true
+report.exclude_lines = [
+  "@overload",
+  "if TYPE_CHECKING",
+  "pragma: no cover",
+]
 
 [tool.semantic_release]
 version_toml = [ "pyproject.toml:project.version" ]
