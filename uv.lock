@@ -4,16 +4,16 @@ requires-python = ">=3.10"
 
 [[package]]
 name = "all-repos"
-version = "1.31.0"
+version = "1.32.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "contextlib-chdir", marker = "python_full_version < '3.11'" },
     { name = "identify" },
     { name = "packaging" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/81/6d/2e793a3884244034e2a4e587759ddda0a94f808571a01d6acb15cb3702c8/all_repos-1.31.0.tar.gz", hash = "sha256:b9083857addd96b76ae958b25ac19ad314f3e5c43e3212721b943fc7f14ea851", size = 31107, upload-time = "2025-10-24T18:50:51.83Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/64/c2dcf990cd2644d0f871cee3434779569d210897b0860e749b9b4a0c6def/all_repos-1.32.0.tar.gz", hash = "sha256:b57b70f20a2f9f92a9462089d432d41625b10936d311b3c300260d781607886d", size = 31183, upload-time = "2026-05-12T15:08:57.75Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d5/c1/a39c1033b121c1c66574994f33e534e3cf51866605762efdd3c1256dc5b7/all_repos-1.31.0-py2.py3-none-any.whl", hash = "sha256:3959fe9bb7bdf2c932ed920df83078e7b11a16941cc75512d48da6402fc0a684", size = 44779, upload-time = "2025-10-24T18:50:50.494Z" },
+    { url = "https://files.pythonhosted.org/packages/57/39/d952c7dc99cc4c06882173a196903954225e09ad435cc6450097866df948/all_repos-1.32.0-py2.py3-none-any.whl", hash = "sha256:46d427f20730842a3ec3b46c6743fb59009e5393ab6f06feb7a81fef6a9fe756", size = 44889, upload-time = "2026-05-12T15:08:56.637Z" },
 ]
 
 [[package]]
