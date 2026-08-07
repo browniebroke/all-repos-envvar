@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.5.0 (2026-08-07)
+
+### Features
+
+- Add support for python 3.15 ([`8476c52`](https://github.com/browniebroke/all-repos-envvar/commit/8476c527ab37d6e694aa8466d0c76b3f9796c382))
+
 ## v1.4.0 (2025-09-18)
 
 ### Features
