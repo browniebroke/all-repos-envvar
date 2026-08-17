@@ -41,6 +41,7 @@ urls.Twitter = "https://twitter.com/_BrunoAlla"
 dev = [
   "pytest>=9,<10",
   "pytest-cov>=7,<8",
+  "ty==0.0.72",
 ]
 
 [tool.ruff]
@@ -81,20 +82,9 @@ lint.isort.known-first-party = [ "all_repos_envvar", "tests" ]
 [tool.pyproject-fmt]
 max_supported_python = "3.15"
 
-[tool.mypy]
-mypy_path = "src/"
-exclude = [
-  "setup.py",
-]
-disallow_any_generics = true
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
-check_untyped_defs = true
-warn_unused_ignores = true
-warn_unreachable = true
-overrides = [ { module = "tests.*", allow_untyped_defs = true } ]
-no_implicit_optional = true
-show_error_codes = true
+[tool.ty]
+terminal.error-on-warning = true
+analysis.allowed-unresolved-imports = [ "test.**" ]
 
 [tool.pytest]
 addopts = [ "-v", "-Wonce", "--cov=all_repos_envvar" ]

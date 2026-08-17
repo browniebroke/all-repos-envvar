@@ -51,8 +51,11 @@ repos:
     rev: v2.4.3
     hooks:
       - id: codespell
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v2.3.0
+  - repo: local
     hooks:
-      - id: mypy
-        additional_dependencies: []
+      - id: local-ty
+        name: ty check
+        entry: uv run ty check
+        require_serial: true
+        language: system
+        pass_filenames: false
