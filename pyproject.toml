@@ -41,7 +41,7 @@ urls.Twitter = "https://twitter.com/_BrunoAlla"
 dev = [
   "pytest>=9,<10",
   "pytest-cov>=7,<8",
-  "ty==0.0.75",
+  "ty==0.0.76",
 ]
 
 [tool.ruff]
