@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.0.0 (2026-11-07)
+
+### Features
+
+- Drop support for python 3.10 ([`8d97339`](https://github.com/browniebroke/all-repos-envvar/commit/8d97339cc50a5419a57eeee35a011ee1f50c32ce))
+
 ## v1.5.0 (2026-08-07)
 
 ### Features
